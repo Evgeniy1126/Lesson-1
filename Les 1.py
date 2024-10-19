@@ -1,3 +1,5 @@
+from multiprocessing.managers import Value
+
 x = 2 # переменная int
 y = 4 # переменная int
 z = x*y # умножение 2-х переменных
@@ -16,3 +18,18 @@ per6 = "Хороший" # переменная str
 per7 = f"{per4} {per6} {per5}!"
 # вывод значений per7
 print(per7)
+# "True|false - правильно или нет
+def check_expression (per8, per9, per10):
+    return per8 + per9 == per10
+# ввод значений
+try:
+    per8 = int(input("Введите первое число (per8): "))
+    per9 = int(input("Введите второе число (per9): "))
+    per10 = int(input("Введите результат (per10): "))
+    # Проверка результата if check_expression(per8, per9, per10):
+    if check_expression(per8, per9, per10):
+         print(f"{per8} + {per9} = {per10} - Верно!")
+    else:
+         print(f"{per8} + {per9} = {per10} - Неверно!")
+except ValueError:
+    print("Пожалуйста, введите целые числа!")
