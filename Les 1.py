@@ -32,4 +32,4 @@ try:
     else:
          print(f"{per8} + {per9} = {per10} - Неверно!")
 except ValueError:
-    print("Пожалуйста, введите целые числа!")
+    print('Пожалуйста, введите целые числа!')
