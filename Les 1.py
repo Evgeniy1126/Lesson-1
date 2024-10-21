@@ -33,3 +33,9 @@ try:
          print(f"{per8} + {per9} = {per10} - Неверно!")
 except ValueError:
     print('Пожалуйста, введите целые числа!')
+# тип данных none
+per11 = None
+if per11 is None:
+   print("переменная не имеет значения.")
+else:
+   print("переменная имеет значение:", per11)
